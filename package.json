@@ -1,6 +1,6 @@
 {
   "name": "sentstream",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A streaming sentence splitter for LLM output: emits complete sentences and markdown blocks as soon as they finish.",
   "license": "MIT",
   "author": "acus9345 <acus9345@gmail.com>",
