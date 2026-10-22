@@ -1,0 +1,55 @@
+{
+  "name": "sentstream",
+  "version": "0.1.0",
+  "description": "A streaming sentence splitter for LLM output: emits complete sentences and markdown blocks as soon as they finish.",
+  "license": "MIT",
+  "author": "acus9345 <acus9345@gmail.com>",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test \"test/**/*.test.js\"",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acus9345/sentstream.git"
+  },
+  "homepage": "https://github.com/acus9345/sentstream#readme",
+  "bugs": {
+    "url": "https://github.com/acus9345/sentstream/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^6.0.3"
+  },
+  "keywords": [
+    "llm",
+    "streaming",
+    "sentence",
+    "splitter",
+    "sentence-boundary",
+    "markdown",
+    "tts",
+    "tokenizer",
+    "ai",
+    "chunking"
+  ],
+  "sideEffects": false
+}
